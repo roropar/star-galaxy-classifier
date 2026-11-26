@@ -1,5 +1,5 @@
-# Stars, Galaxies & the Filters Between Them
+# Stars and Galaxies and Bears, Oh My!
 
-View the project here:
+View the project page here:
 
 https://roropar.github.io/star-galaxy-classifier/
