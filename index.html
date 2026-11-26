@@ -61,7 +61,7 @@ df = df[df[<span class="str">"class"</span>].isin([<span class="str">"STAR"</spa
 <p>Now, obviously, we need to split the data into a training set and a test set. If we test the model on the same data it trained on, we only see how well it does on examples it’s already seen. A separate test set shows how well it handles new examples.</p>
 <p>For each split, I randomly assigned 60% of the unique object IDs to training and the other 40% to testing. Rows with the same ID stayed together, and I tested all 16 filter combinations on the same rows within each split.</p>
 <p>From there, I honestly tried to build logistic regression from scratch after researching the math behind it. After spending a while on it, I gave up and switched to scikit-learn, with some help from my friend named Claude.</p>
-<p>I ran the experiment across five different train/test splits so the results wouldn’t depend on one flukey split. Each split tested tens of thousands of objects, so I reported the results per 100 for readability. For example, 28.43 per 100 stars means the model correctly identified 28.43% of actual stars on average across the five splits.</p>
+<p>I ran the experiment across five different train/test splits so the results wouldn’t depend on one flukey split. Each split tested tens of thousands of objects, so I reported the results per 100 for readability.</p>
 <div class="code"><div class="codehead">NOTEBOOK / MODEL LOOP · Python / scikit-learn</div><pre><code><span class="kw">for</span> bands <span class="kw">in</span> filtersets:
     columns = <span class="fn">list</span>(bands)
     model = LogisticRegression()
