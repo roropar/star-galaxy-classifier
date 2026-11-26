@@ -1,4 +1,4 @@
-# Stars and Galaxies and Bears, Oh My!
+# Stars and Galaxies and Colors, Oh My!
 
 View the project page here:
 
